@@ -1,6 +1,6 @@
 
 
-# Lab 3 - Continuous Deploy - Frontend
+# Lab 1 - Continuous Deploy - Frontend
 
 ### Summary: Extend your existing pipeline to take the artifact built in the CI/Build stage and deploy it to an environment
 
@@ -80,7 +80,7 @@ The target infrastructure has been pre-created for us. The application will be d
 - Select **Rolling** and click on **Use Strategy**, the frontend is a static application so no need to do canary, new features will be managed by Feature Flags at a later stage of this lab
 
 
-# Lab 4 - Continuous Deploy - Backend
+# Lab 2 - Continuous Deploy - Backend
 
 ### Summary: Extend your existing pipeline to derisk production deployments
 
@@ -153,97 +153,8 @@ The target infrastructure has been pre-created for us and we used it in the prev
 
 10. Approve the canary deployment for the pipeline to complete
 
-# Lab 5 - Feature Flags
 
-### Summary: Build and deploy your first feature flag 
-
-**Learning Objective(s):**
-
-- Create a Feature Flag
-
-- Create an SDK key
-
-- Deploy application that uses Flag/SDK Key
-
-- Toggle Feature Flag to enable/disable feature
-
-**Steps**
-
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdxbh_5hgTG2CsE8Dp_5_BLB75OITfS-9xxW-xplPehdYbj38WMTloCOo4tbOAom9VRc65S99IB54w-TY7INiG6Bd8PMqvRs_EsTQHzKjCZTjnv8laP7XCEuf9_l3s8HV3UuxVsnTgzuZpkV6Fq-FVoqpHY5kSuQ3un7Xrssg?key=cRG2cvp_PHVW0KG2Gq6Y_A)
-
-**Create the SDK Key**  
-
-1. From the left hand side menu under Feature Flags,  select **environments**
-
-2. From the list select the prod environment
-
-3. Click **+ New SDK Key**, configure as follows and click **Create**
-
-| Input    | Value      | Notes |
-| -------- | ------     | ----- |
-| Name     |sdk|       |
-| Key Type |client|       |
-
-4. Copy the secret to use later. Note that the key will be redacted once you leave the page.
-
-5. From the left hand side menu select Project settings
-
-6. From the resources available click on the **Variables** 
-
-7. Modify the sdk variable and copy in the key
-
-| Input | Value                               | Notes |
-| ----- | ----------------------------------- | ----- |
-| Name  |sdk|       |
-| Value | _SDK Key copied from previous step_ |       |
-
-4. Click **Save**
-
-********
-
-**Create the Flag**
-
-1. From the left hand menu, go to **Feature Flags** → **Feature Flags**
-
-2. Click **+ New Feature Flag,** configure as follows and click **Save and Close**.
-
-| Input                         | Value      | Notes |
-| ----------------------------- | --------------   | ----- |
-| Type                          |Boolean|       |
-| Name                          |webinarff|       |
-| **Variation Settings**        |                  |       |
-| Name (first one)              |Show Offer|       |
-| Name (second one)             |Hide Offer|       |
-| If the flag is Enabled, serve |Show Offer|       |
-
-3. Enable the flag by clicking on the **Flag is Disabled** button and click **Save**
-
-
-5. **Run** the pipeline created in previous steps
-
-6. **Approve canary deployment** before progressing to the next step
-
-**Change the Flag via the UI**
-
-1. From the left hand menu in Harness, go to **Feature Flags** → **Target Management**
-
-2. Select the target shown in the list. If target is not shown, create the target manually
-
-| Input      | Value     | Notes |
-| ---------- | --------- | ----- |
-| Name       |webinar|       |
-| Identifier |webinar|       |
-
-3. Click **Add Flag**, toggle **webinarff**, set the variation to **Show Offer**, then click on **Add 1 Flags**
-
-4. Note that your application now displays a special offer
-
-5. For your target, set the variation to **Hide Offer** and click **Save Chances**
-
-6. Note that your application now does NOT display the special offer
-
-# Lab 6 - Continuous Verification
-
+# Lab 3 - Continuous Verification
 
 ### Summary: Automate the verification of new releases 
 
@@ -273,7 +184,7 @@ Click **Save** and then click **Run** to execute the pipeline with the following
 | Branch Name |main| Leave as is |
 
 
-# Lab 7 - Validate Release
+# Lab 4 - Validate Release
 
 **Learning Objective(s):**
 
@@ -306,7 +217,7 @@ Click **Save** and then click **Run** to execute the pipeline with the following
 - Add a canary rollout from 10% to 50% traffic and see how this impacts the traffic distribution
 
 
-# Lab 8 - Governance/Policy as Code
+# Lab 5 - Governance/Policy as Code
 
 ### Summary: Create and apply policies as code in order to enable governance and promote self-service. In Lab 2 we saw how a user is impacted by policies in place, now is the time to create such policies
 
@@ -363,7 +274,7 @@ Click **Save** and then click **Run** to execute the pipeline with the following
 8. Click **Save** and note that the save succeeds without any policy failure
 
 
-# Lab 9 - Governance/Policy as Code (Advanced)
+# Lab 6 - Governance/Policy as Code (Advanced)
 
 **Create a Policy to block critical CVEs**
 
