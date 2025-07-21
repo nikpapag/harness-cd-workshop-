@@ -2,11 +2,11 @@
 
 # Lab 1 - Continuous Deploy - Frontend
 
-### Summary: Extend your existing pipeline to take the artifact built in the CI/Build stage and deploy it to an environment
+### Summary: Create a new pipeline that deploys a pre-built artifact to an environment
 
 **Learning Objective(s):**
 
-- Add a second stage to an existing pipeline
+- Create a new pipeline
 
 - Create a k8s service
 
@@ -18,17 +18,27 @@
 
 **Steps**
 
-2. In the existing pipeline, add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
+1. From the left hand menu, navigate to Projects → Select the project available
 
-3. Enter the following values and click on **Set Up Stage**
+2. From the left hand side menu select Pipelines
 
+3. Click + Create a Pipeline, enter the following values, then click Start
+
+| Field           | Value          | Notes |
+| --------------- | -------------- | ----- |
+| Name      |workshop|       |
+| How do you want to setup your pipeline |Inline|This indicates that Harness (rather than Git) will be the source of truth for the pipeline|
+
+4. In the existing pipeline, add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
+
+5. Enter the following values and click on **Set Up Stage**
 
 | Input           | Value          | Notes |
 | --------------- | -------------- | ----- |
 | Stage Name      |frontend|       |
 | Deployment Type |Kubernetes|       |
 
-4. Configure the **frontend** Stage with the following\
+6. Configure the **frontend** Stage with the following\
    **Service**
 
 - Click **+Add Service** and configure as follows****
