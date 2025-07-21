@@ -191,10 +191,6 @@ The target infrastructure has been pre-created for us and we used it in the prev
 
 Click **Save** and then click **Run** to execute the pipeline with the following inputs. As a bonus, save your inputs as an Input Set before executing (see below)
 
-| Input       | Value | Notes       |
-| ----------- | ----- | ----------- |
-| Branch Name |main| Leave as is |
-
 
 # Lab 4 - Validate Release
 
