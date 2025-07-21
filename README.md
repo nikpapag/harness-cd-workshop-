@@ -19,11 +19,12 @@
 **Steps**
 
 1. From the left hand menu, navigate to **Projects** → **Select the project available**\
+   
    ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfhuMykMsIHl-7FjliWssHc0uwRpdLdrnq7GkGAI0g6UBZM69F1zpQ8ZA8N_vMqjpoGFYFR_weJk7OtOGGa2bksIaS6BlktwytmuJ1THM3e8O6tDT18HYWwFyGUye8ubsrHBChI8ORrCQ88JcKWpLjQ0DsXDS0NSZrkfZ4RUQ?key=cRG2cvp_PHVW0KG2Gq6Y_A)
 
-2. From the left hand side menu select **Pipelines**
+3. From the left hand side menu select **Pipelines**
 
-3. Click **+ Create a Pipeline**, enter the following values, then click **Start**
+4. Click **+ Create a Pipeline**, enter the following values, then click **Start**
 
 | Field                                  | Value            | Notes
 | -------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------ |
