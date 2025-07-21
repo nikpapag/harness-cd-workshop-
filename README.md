@@ -30,7 +30,7 @@
 | Name                                   |workshop|                                                                                            |
 | How do you want to setup your pipeline |Inline| This indicates that Harness (rather than Git) will be the source of truth for the pipeline |
 
-4. In the existing pipeline, add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
+4. Add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
 
 5. Enter the following values and click on **Set Up Stage**
 
