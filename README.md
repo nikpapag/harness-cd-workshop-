@@ -63,7 +63,7 @@
 | Docker Registry Connector  |dockerhub|                                    |
 | Artifact Source Identifier |frontend|                                    |
 | Image Path                 |nikpap/harness-workshop|                                    |
-| Tag                        |<+variable.username>-<+pipeline.sequenceId>| _Select value, then click on the pin and select expression and paste the value |
+| Tag                        |<+variable.username>-1| _Select value, then click on the pin and select expression and paste the value |
 
 **Environment**
 
