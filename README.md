@@ -102,9 +102,9 @@ The target infrastructure has been pre-created for us. The application will be d
 
 **Steps**
 
-5. In the existing pipeline, add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
+1. In the existing pipeline, add a Deployment stage by clicking **Add Stage** and select **Deploy** as the Stage Type
 
-6. Enter the following values and click on **Set Up Stage**
+2. Enter the following values and click on **Set Up Stage**
 
 
 | Input           | Value          | Notes |
@@ -112,7 +112,7 @@ The target infrastructure has been pre-created for us. The application will be d
 | Stage Name      |backend|       |
 | Deployment Type |Kubernetes|       |
 
-7. Configure the **backend** Stage with the following\
+3. Configure the **backend** Stage with the following\
    **Service**
 
 - Click **Select Service** and configure as follows****
@@ -149,13 +149,13 @@ The target infrastructure has been pre-created for us and we used it in the prev
 | User Groups |All Project Users|       |
 
 
-8. Click **Save** and then click **Run** to execute the pipeline with the following inputs. As a bonus, save your inputs as an Input Set before executing (see below)
+4. Click **Save** and then click **Run** to execute the pipeline with the following inputs. As a bonus, save your inputs as an Input Set before executing (see below)
 
 | Input       | Value | Notes       |
 | ----------- | ----- | ----------- |
 | Branch Name |main| Leave as is |
 
-9. While the canary deployment is ongoing and waiting **approval** navigate to the web page and see if you can spot the canary (use the check release button) 
+5. While the canary deployment is ongoing and waiting **approval** navigate to the web page and see if you can spot the canary (use the check release button) 
 
 | project                | domain        | suffix |
 | ---------------------- | ------------- | ------ |
@@ -163,7 +163,7 @@ The target infrastructure has been pre-created for us and we used it in the prev
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfmb1N3lAe0EOnEun9neU9y3ilqy3HbxfnWfUMzF3FsykslwgQfU_W4pE0wlt5kYSp6_mTs7cVP0anhJ7uvtsytal2qX3ZEq3vvOT3DOBUzE9SZ3rpwkAHP6e_ExdRbo5VmN2kpxdFlp6u8iGaKwhW_uyAohEmJurkjmEB2Ww?key=cRG2cvp_PHVW0KG2Gq6Y_A)
 
-10. Approve the canary deployment for the pipeline to complete
+6. Approve the canary deployment for the pipeline to complete
 
 
 # Lab 3 - Continuous Verification
